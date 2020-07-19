@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<meta charset='UTF-8'>
+<html>
+
+	<head>
+		    <title>Daniel Mas</title>
+		    <!-- Fonts -->
+		    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300i,400i,600i" rel="stylesheet">
+	    	<!-- Styles -->
+	    	<style>
+
+				header {
+		background: url('http://www.kodhus.com/freecourse-images/header-image.jpg') no-repeat center;
+		background-size: 100% 100%;
+		height: 630px;
+}
+				html {
+				    font: 400 1em/1.4 'Source Sans Pro',sans-serif;
+				    text-rendering: optimizeLegibility;
+				}
+
+				body {
+				    display: flex;
+				    flex-direction: row;
+				    padding: 1.5em;
+				    min-height: 10vh;
+				    width: 85vw;
+						/* max-width: 1150px; */
+						max-width: 750px;
+				    margin: auto;
+						background-image: url('pattern.jpg');
+						background-color: rgba(255,255,255,0.75);
+						background-blend-mode: lighten;
+				}
+
+				a {
+				    color: #337ab7;
+				    text-decoration: none;
+				    font-weight: bold
+				}
+
+				.content {
+				    order: 1;
+				    flex: 4;
+				    padding: 2em;
+				    margin: 1em;
+				    background: rgba(150,180,180,.0); #147, 128, 108  #150,180,180
+				    border-radius: 5px;
+						/* background-color: rgba(255,255,255,0.5);
+						background-blend-mode: lighten; */
+						/* background-image: url('pattern2.jpg');
+						background-color: rgba(255,255,255,0.8);
+						background-blend-mode: lighten; */
+				}
+
+				.content h1, h2 {
+				    margin: 0;
+				    font-weight: 300;
+				}
+
+				.content p {
+				    text-align: justify;
+				}
+
+				/* @media screen and (min-width: 600px) {
+						.left-bar{
+							display: block;
+						}
+				} */
+
+				.left-bar {
+					  display: block;
+						flex: 1;
+						padding: 1em;
+						margin: 1em;
+						background: rgba(150,180,180,.0);
+						border-radius: 5px;
+						text-align: center;
+						/* background-color: rgba(255,255,255,0.5);
+						background-blend-mode: lighten; */
+						/* background-image: url('pattern2.jpg');
+						background-color: rgba(255,255,255,0.8);
+						background-blend-mode: lighten; */
+				}
+
+				.left-bar ul li {
+						font-weight: 600;
+						list-style-type: none;
+				}
+
+				.img-circle {
+					border-radius: 50%;
+				}
+
+				.imgMe {
+						border: 3px solid black;
+						height: auto;
+					width: 190px;
+
+					}
+					.top-bar{
+						display: block;
+					}
+
+
+
+
+				.paper {
+				    border-radius: 5px;
+				    border-width: 0px;
+				    border-style: dashed;
+				    font-size: 0.9em;
+				    #background: white;
+						background: rgba(150,180,180,.0);
+				    display: flex;
+				    flex-direction: row;
+				    box-shadow: 0px 0px 0px #999999;
+				}
+
+				.paperImg {
+				    /* margin: 1em; */
+						margin: 0em;
+				}
+
+				.paperImg img {
+					display: block;
+				    /* width: 100px;
+				    height: 100px; */
+						width: 0px;
+						height: 0px;
+				}
+
+				.paperInfo {
+				    flex: 1;
+				    margin: 1em;
+				    display: flex;
+				    flex-direction: column;
+				    height: 100%;
+				}
+
+				.paperInfo p {
+				    margin: 0;
+				}
+
+				.infoTop {
+				    flex: 1;
+				    flex-grow: 1;
+				}
+
+
+
+				@media screen {
+					.left-bar{
+						display: None;
+					}
+					.top-bar{
+						display: block;
+					}
+					.paperImg {
+							display: None;
+					}
+					.content {
+							background: rgba(150,180,180,.0); #147, 128, 108  #150,180,180
+					}
+				}
+
+				/* @media screen and (max-width: 850px) {
+						.left-bar{
+							display: None;
+						}
+						.top-bar{
+							display: block;
+						}
+						.paperImg {
+								display: None;
+						}
+						.content {
+								background: rgba(150,180,180,.0); #147, 128, 108  #150,180,180
+						}
+				}
+
+				@media screen and (min-width: 850px) {
+						.top-bar{
+							display: None;
+						}
+						.left-bar{
+							display: block;
+						}
+						.paperImg {
+								display: block;
+						}
+				} */
+
+
+/* .header {
+    background: url('http://www.kodhus.com/freecourse-images/header-image.jpg') no-repeat; /* you may also change the URL */
+    background-size: 100% 100%;
+    width: 100%;
+    display: inline-block;
+    height: 200px; /* you may also change this */
+} */
+.splash_img {
+  background: url(Images/bakemock.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+			</style>
+
+
+
+
+
+			<meta name="viewport" content="width=800" />
+
+
+
+	</head>
+
+	<body>
+
+
+
+		 <main class="content">
+
+
+			 <div class="fixed">
+				 <!-- Left Bar -->
+				 <nav class="top-bar">
+
+					 <table>
+  <tr>
+    <td><img src="images/mypicture2.jpg" class='img-circle imgMe'></td>
+		<td></td>
+		<td></td>
+    <td>	<font size="5.2"><h2><b>Daniel Mas Montserrat</b></h2></font>
+
+				<font size="4.9">
+					<i>  dmasmont@stanford.edu </i>
+					<!-- dmasmont@purdue.edu -->
+					<!-- &nbsp &nbsp -->
+					<br>
+					<a href="https://scholar.google.com/citations?user=VqhWUf8AAAAJ&hl=en">
+							Google Scholar
+					</a>
+					<!-- <br> -->
+					&nbsp &nbsp
+					<a href="https://www.linkedin.com/in/daniel-mas-montserrat/">
+							LinkedIn
+					</a>
+					&nbsp &nbsp
+					<!-- <br> -->
+					<a href="https://github.com/dmasmont/">
+							GitHub
+					</a>
+
+					&nbsp &nbsp
+					<!-- <br> -->
+					<a href="https://twitter.com/_danielmas">
+							Twitter
+					</a>
+
+					<!-- <br> -->
+					<!-- &nbsp &nbsp
+					<a href="content/CV.pdf">
+							CV
+					</a> -->
+
+
+
+					</font>
+
+			</td>
+  </tr>
+</table>
+
+						<!-- <hr> -->
+						<br>
+				 </nav>
+
+			 </div>
+
+			 <h1 id="bio"><b>About Me</b></h1>
+			 <hr>
+			 <br>
+
+			 <p class='text-justify'>
+			I am a Postdoctoral Scholar at <a href='https://www.stanford.edu/'>Stanford University</a>. My research focuses on <b>Artificial Intelligence</b> applied to <b>Biomedicine</b> and <b>Healthcare</b>.
+			</p>
+
+			 <p>
+			I hold a PhD in Electrical and Computer Engineering from <a href='https://www.purdue.edu/'>Purdue University</a> and a Bachelor's degree in  Audiovisual Systems in Telecommunications Engineering at <a href="http://www.upc.edu/?set_language=en">Polytechnic University of Catalonia</a>.
+
+			During my PhD, I was a research assistant in the <a href='http://viperlab.org'>Video and Image Processing Laboratory (VIPER)</a>.
+			I was an intern at <a href='https://www.stanford.edu/'>Stanford University</a>, <a href='https://www.qualcomm.com/'>Qualcomm</a>, and <a href='https://developers.hp.com/pixel-intelligence'>HP Labs</a>.
+			Previously I worked as an iOS developer at  <a href='http://www.visual-engin.com'>Visual Engineering</a>.				</p>
+
+        <!-- <p class='text-justify'>
+				I am a Postdoctoral Scholar at <a href='https://www.stanford.edu/'>Stanford University</a>. My research focuses on <b>Artificial Intelligence</b> applied to <b>Biomedicine</b> and <b>Healthcare</b>.
+				I hold a PhD in Electrical and Computer Engineering from <a href='https://www.purdue.edu/'>Purdue University</a>. Previously, I received a Bachelor's degree in  Audiovisual Systems in Telecommunications Engineering at <a href="http://www.upc.edu/?set_language=en">Polytechnic University of Catalonia</a>.
+				</p>
+
+        <p>
+				During my PhD, I was a research assistant in the <a href='http://viperlab.org'>Video and Image Processing Laboratory (VIPER)</a>.
+				I was a researcher at <a href='https://www.stanford.edu/'>Stanford University</a> during Fall 2019 working on computational genomics.
+				I was an intern at <a href='https://www.qualcomm.com/'>Qualcomm</a> during Summer 2019 working on image quality methods.
+				I was a researcher at <a href='https://developers.hp.com/pixel-intelligence'>HP Labs</a> from 2016 to 2019 where I worked on object detection and pose estimation problems.
+				Previously I worked as an iOS developer at  <a href='http://www.visual-engin.com'>Visual Engineering</a>.				</p> -->
+
+        <p class='text-justify'>
+        </p>
+
+
+
+
+								<br>
+								<br>
+								<br>
+								<h1 id="experience"><b>Education</b></h1>
+								<hr>
+								<br>
+								<div class="paper">
+										<!-- <div class="paperImg">
+												<img src="images/purdue.jpg">
+										</div> -->
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>Purdue University</strong>
+														<br>
+														<strong>Doctor of Philosophy in Electrical and Computer Engineering </strong>
+														<p>West Lafayette, IN</p>
+														<p>2016 - 2020</p>
+												</div>
+										</div>
+								</div>
+								<div class="paper">
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>Polytechnic University of Catalonia</strong>
+														<br>
+														<strong>Bachelor of Science (Highest Honors) in Audiovisual Systems in Telecommunications Engineering </strong>
+														<p>Barcelona, Spain</p>
+														<p>2011 - 2015</p>
+												</div>
+										</div>
+								</div>
+
+
+								<br>
+								<br>
+								<br>
+								<h1 id="experience"><b>Experience</b></h1>
+								<hr>
+								<br>
+								<div class="paper">
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>Purdue University</strong>
+														<br>
+														<strong>Research Assistant</strong>
+														<p>West Lafayette, IN</p>
+														<p>2015 - 2020</p>
+												</div>
+										</div>
+								</div>
+								<div class="paper">
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>Stanford University</strong>
+														<br>
+														<strong>Research Intern</strong>
+														<p>Stanford, CA</p>
+														<p>2019</p>
+												</div>
+										</div>
+								</div>
+								<div class="paper">
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>Qualcomm</strong>
+														<br>
+														<strong>Image Quality Intern</strong>
+														<p>San Diego, CA</p>
+														<p>2019</p>
+												</div>
+										</div>
+								</div>
+								<div class="paper">
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>HP Labs</strong>
+														<br>
+														<strong>Research Intern</strong>
+														<p>Palo Alto, CA</p>
+														<p>2016 - 2019</p>
+												</div>
+										</div>
+								</div>
+								<div class="paper">
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>Purdue University</strong>
+														<br>
+														<strong>Teaching Assistant</strong>
+														<p>West Lafayette, IN</p>
+														<p>2016</p>
+												</div>
+										</div>
+								</div>
+								<div class="paper">
+										<div class="paperInfo">
+												<div class="'infoTop">
+														<strong>Visual Engineering</strong>
+														<br>
+														<strong>iOS Developer</strong>
+														<p>Barcelona, Spain</p>
+														<p>2015</p>
+												</div>
+										</div>
+								</div>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<h1 id="papers"><b>Patents</b></h1>
+<hr>
+<br>
+<div class="paper">
+		<div class="paperImg">
+				<img src="images/symbolpatent.png">
+		</div>
+		<div class="paperInfo">
+				<div class="'infoTop">
+						<strong>Selecting training symbols for symbol recognition</strong>
+						<p>Q. Lin, <b>D. Mas Montserrat</b>, J. P. Allebach, E. J. Delp</p>
+						<i>WO Patent WO2019152017A1</i>
+						<p>2019-08-08; PCT/US2018/016211</p>
+				</div>
+				<div class="infoBottom">
+					<p><a href="https://patents.google.com/patent/WO2019152017A1/">[url]</a>
+					</p>
+				</div>
+		</div>
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+	<h1 id="papers"><b>Publications</b></h1>
+  <hr>
+	<br>
+	<div class="paper">
+		<div class="paperImg">
+				<img src="images/deepfakes.jpg">
+		</div>
+		<div class="paperInfo">
+				<div class="'infoTop">
+						<strong>Deepfakes Detection with Automatic Face Weighting</strong>
+						<p><b>D. Mas Montserrat</b> et al.</p>
+						<i>IEEE Computer Vision and Pattern Recognition Workshops (CVPRW)</i>
+						<p>June 2020 - Seattle, WA</p>
+				</div>
+				<div class="infoBottom">
+					<p>
+						<a href="https://arxiv.org/abs/2004.12027">[arxiv]</a>
+						<a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w39/Montserrat_Deepfakes_Detection_With_Automatic_Face_Weighting_CVPRW_2020_paper.pdf">[url]</a>
+					</p>
+				</div>
+		</div>
+</div>
+	<div class="paper">
+		<div class="paperImg">
+				<img src="images/satellite.JPG">
+		</div>
+		<div class="paperInfo">
+				<div class="'infoTop">
+						<strong>Manipulation Detection in Satellite Images Using Deep Belief Networks</strong>
+						<p>J. Horvat, <b>D. Mas Montserrat</b>, H. Hao, E. Delp</p>
+						<i>IEEE Computer Vision and Pattern Recognition Workshops (CVPRW)</i>
+						<p>June 2020 - Seattle, WA</p>
+				</div>
+				<div class="infoBottom">
+					<p><a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w39/Horvath_Manipulation_Detection_in_Satellite_Images_Using_Deep_Belief_Networks_CVPRW_2020_paper.pdf">[url]</a>
+						<a href="https://arxiv.org/abs/2004.12441">[arxiv]</a>
+					</p>
+				</div>
+		</div>
+</div>
+<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>LAI-Net: Local-Ancestry Inference With Neural Networks</strong>
+										<p><b>D. Mas Montserrat</b>, C. Bustamante, A. Ioannidis</p>
+										<i>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>
+										<p>May 2020 -  Barcelona, Spain</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://ieeexplore.ieee.org/document/9053662">[url]</a>
+										<a href="http://arxiv.org/abs/2004.10377">[arxiv]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Addressing Ancestry Disparities in Genomic Medicine: A Geographic-Aware Algorithm</strong>
+										<p><b>D. Mas Montserrat</b>, A. Kumar, C. Bustamante, A. Ioannidis</p>
+										<i>International Conference on Learning Representations Workshops (ICLR Workshops)</i>
+										<p>April 2020 -  Addis Ababa, Ethiopia</p>
+								</div>
+								<div class="infoBottom">
+										<a href="https://arxiv.org/abs/2004.12053">[arxiv]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Active Learning for Efficient Construction of Diverse Biobanks</strong>
+										<p><b>D. Mas Montserrat</b>, C. Bustamante, A. Ioannidis</p>
+										<i>International Conference on Learning Representations Workshops (ICLR Workshops)</i>
+										<p>April 2020 -  Addis Ababa, Ethiopia</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://drive.google.com/open?id=1ADUTJ1iSc3r7QONK-CPOu4NH5VCuPDfQ">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>XGMix: Local-Ancestry Inference with Stacked XGBoost</strong>
+										<p>A. Kumar, <b>D. Mas Montserrat</b>, C. Bustamante, A. Ioannidis</p>
+										<i>International Conference on Learning Representations Workshops (ICLR Workshops)</i> <b>(Best Paper Award)</b>
+										<p>April 2020 -  Addis Ababa, Ethiopia</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://www.biorxiv.org/content/10.1101/2020.04.21.053876v1">[biorxiv]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Detecting Tax Evasion Through Wealth Tax Returns</strong>
+										<p><b>D. Mas Montserrat</b>, M. Mas Montserrat</p>
+										<i>Essays on Wealth Taxation, Avoidance and Evasion Among the Rich (Chapter 4)</i>
+										<p>January 2020</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="http://hdl.handle.net/10803/668654">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Extra FAT: A photorealistic dataset for 6D object pose estimation</strong>
+										<p>J. Chen, <b>D. Mas Montserrat</b>, Q. Lin, E. J. Delp, J. P. Allebach</p>
+										<i>IS&T International Symposium on Electronic Imaging (EI)</i>
+										<p>January 2020 - Burlingame, CA</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://www.ingentaconnect.com/contentone/ist/ei/pre-prints/content-ei2020-imawm-221?crawler=true&mimetype=application/pdf">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Class-Conditional VAE-GAN for Local-Ancestry Simulation</strong>
+										<p><b>D. Mas Montserrat</b>, C. Bustamante, A. Ioannidis</p>
+										<i>Machine Learning for Computational Biology at NeurIPS (MLCB/NeurIPS)</i>
+										<p>December 2019 -  Vancouver, Canada</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://arxiv.org/abs/1911.13220">[arxiv]</a>
+										<a href="https://github.com/dmasmont/Class-Conditional-VAE-GAN-for-Local-Ancestry-Simulation">[code]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Multi-View Matching Network for 6D Pose Estimation</strong>
+										<p><b>D. Mas Montserrat</b>, J. Chen, Q. Lin, J. P. Allebach, E. J. Delp</p>
+										<i>IEEE Computer Vision and Pattern Recognition Workshops (CVPRW)</i>
+										<p>June 2019 - Long Beach, CA</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://arxiv.org/abs/1911.12330">[arxiv]</a>
+										<a href="https://scene-understanding.com/papers/multi_view_matching.pdf">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Shadow removal detection and localization for forensics analysis</strong>
+										<p>S. K Yarlagadda, D. Güera, <b>D. Mas Montserrat</b>, F. M. Zhu, E. J. Delp, P. Bestagini, S. Tubaro</p>
+										<i>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</i>
+										<p>May 2019 -  Brighton, United Kingdom</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://ieeexplore.ieee.org/document/8683695">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Scalable Logo Detection and Recognition with Minimal Labeling</strong>
+										<p><b>D. Mas Montserrat</b>, Q. Lin, J. P. Allebach, E. J. Delp</p>
+										<i>IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)</i>
+										<p>April 2018 - Miami, FL</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://ieeexplore.ieee.org/document/8396990">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Sleep analysis using motion and head detection</strong>
+										<p>J. Choe, <b>D. Mas Montserrat</b>, A. J. Schwichtenberg, E. J. Delp</p>
+										<i>IEEE Southwest Symposium on Image Analysis and Interpretation (SSIAI)</i>
+										<p>April 2018 - Las Vegas, NV</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://ieeexplore.ieee.org/document/8470323">[url]</a>
+									</p>
+								</div>
+
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Logo detection and recognition with synthetic images</strong>
+										<p><b>D. Mas Montserrat</b>, Q. Lin, J. P. Allebach, E. J. Delp</p>
+										<i>IS&T International Symposium on Electronic Imaging (EI)</i>
+										<p>January 2018 - Burlingame, CA</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://www.ingentaconnect.com/contentone/ist/ei/2018/00002018/00000010/art00018">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+				<div class="paper">
+						<div class="paperInfo">
+								<div class="'infoTop">
+										<strong>Training object detection and recognition CNN models using data augmentation</strong>
+										<p><b>D. Mas Montserrat</b>, Q. Lin, J. P. Allebach, E. J. Delp</p>
+										<i>IS&T International Symposium on Electronic Imaging (EI)</i>
+										<p>January 2017 - Burlingame, CA</p>
+								</div>
+								<div class="infoBottom">
+									<p><a href="https://www.ingentaconnect.com/contentone/ist/ei/2017/00002017/00000010/art00005">[url]</a>
+									</p>
+								</div>
+						</div>
+				</div>
+
+
+
+
+
+
+
+
+				<!-- <br>
+				<br>
+				<br>
+				<h1 id="contactinfo"><b>Contact Info</b></h1>
+				<hr>
+
+				<ul>
+				  <li><font size="4"><b>Email:</b> dmasmont@purdue.edu</font></li>
+					<li><font size="4"><b>Webpage:</b> www.dmas.ml</font></li>
+					<li><font size="4"><b>VIPER Lab:</b> https://engineering.purdue.edu/~ips/</font></li>
+				  <li><font size="4"><b>Office Address:</b> 501 Northwestern Ave, West Lafayette, IN 47907, Room 296</font></li>
+				</ul> -->
+
+				<!-- Template
+        <br>
+        <div class="paper">
+            <div class="paperImg">
+                <img src="images/pipe.png">
+            </div>
+            <div class="paperInfo">
+                <div class="'infoTop">
+                    <strong>A Preliminary Study On Convolutional Neural Networks For Camera Model Identification</strong>
+                    <hr>
+                    <p>L. Bondi, <b>D. Güera</b>, L. Baroffio, P. Bestagini, E. J. Delp, S. Tubaro</p>
+                    <i>IS&T International Symposium on Electronic Imaging (EI)</i>
+                    <p>January 2017 - Burlingame, CA</p>
+                </div>
+                <div class="infoBottom">
+                	<p><a href="https://doi.org/10.2352/ISSN.2470-1173.2017.7.MWSF-327">[Paper]</a></p>
+                </div>
+            </div>
+        </div>
+			-->
+
+      <!--
+        <h1 id="classes"><b>Graduate Courses</b></h1>
+        <hr>
+        <table>
+        <tr>
+    	  <td><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=169&show=true&type=grad">ECE 637:</a></td>
+      	  <td>Digital Image Processing I</td>
+      	  <td><a href="https://engineering.purdue.edu/ECE/People/profile?resource_id=2889">Prof. Charles Bouman</a></td>
+    	</tr>
+
+        <tr>
+          <td><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=547&show=true&type=grad">ECE 634:</a></td>
+          <td>Digital Video Systems</td>
+          <td><a href="https://engineering.purdue.edu/ECE/People/profile?resource_id=117177">Prof. Amy Reibman</a></td>
+        </tr>
+
+    	<tr>
+    	  <td><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=145&show=true&type=grad">ECE 600:</a></td>
+      	  <td>Random Variables</td>
+      	  <td><a href="https://engineering.purdue.edu/ECE/People/profile?resource_id=8864">Prof. Mary Comer</a></td>
+    	</tr>
+
+    	<tr>
+    	  <td><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/AboutUs/AboutUs/Plan/CourseInfo/courseInfo?courseid=523&show=true&type=undergrad">ECE 595:</a></td>
+      	  <td>Computer Network Systems</td>
+      	  <td><a href="https://engineering.purdue.edu/ECE/People/ptProfile?resource_id=3252">Prof. Sanjay Rao</a></td>
+    	</tr>
+
+ 	   	<tr>
+    	  <td><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=108&show=true&type=undergrad">ECE 538:</a></td>
+      	  <td>Digital Signal Processing I</td>
+      	  <td><a href="https://engineering.purdue.edu/ECE/People/profile?resource_id=3159">Prof. Michael Zoltowski</a></td>
+    	</tr>
+
+ 	   	<tr>
+    	  <td><a href="https://www.math.purdue.edu/academic/courses/coursepage?subject=MA&course=51100">MA 511:</a></td>
+      	  <td>Linear Algebra</td>
+      	  <td><a href="https://www.math.purdue.edu/people/bio/eremenko">Prof. Alexandre Eremenko</a></td>
+    	</tr>
+		</table> -->
+
+    </main>
+
+		<!-- Left Bar -->
+    <nav class="left-bar">
+        <img src="images/mypicture2.jpg" class='img-circle imgMe'>
+        <h2><b>Daniel Mas Montserrat</b></h2>
+		<i>dmasmont@purdue.edu</i>
+	<!--	<i>dmasmont@stanford.edu</i> -->
+        <hr>
+				<!--
+        <a href="#">Main</b></a><br>
+        <a href="#papers">Publications</a><br>
+        <a href="#classes">Graduate Courses</a><br>
+
+        <hr>
+				-->
+
+				<a href="https://scholar.google.com/citations?user=VqhWUf8AAAAJ&hl=en">
+						Google Scholar<!-- <img src="images/resume.png" width="50px" height="50px"> -->
+				</a><br>
+				<a href="https://www.linkedin.com/in/daniel-mas-montserrat/">
+						LinkedIn<!-- <img src="images/resume.png" width="50px" height="50px"> -->
+				</a><br>
+				<a href="https://github.com/dmasmont/">
+						GitHub<!-- <img src="images/resume.png" width="50px" height="50px"> -->
+				</a><br>
+				<!-- <a href="https://engineering.purdue.edu/~ips/">
+						VIPER Lab
+				</a><br> -->
+				<a href="content/CV.pdf">
+						CV<!-- <img src="images/resume.png" width="50px" height="50px"> -->
+				</a>
+				<!-- //
+				<a href="content/CV_Long.pdf">
+						Long Version
+				</a><br> -->
+				<!-- TODO
+        <a href="https://www.linkedin.com/in/dguera">
+            <img src="images/linkedin_logo.png" width="50px" height="50px">
+        </a> -->
+    </nav>
+
+
+	</body>
