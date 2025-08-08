@@ -55,6 +55,7 @@ D) Error
 ---
 
 2. Which of the following statements about Python list slicing is **true**?
+
 A) `list_a[::-1]` returns the list reversed.  
 B) `list_a[::2]` returns all elements in reverse order.  
 C) `list_a[:3]` removes the first three elements from the list.  
