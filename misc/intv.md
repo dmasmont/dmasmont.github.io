@@ -78,6 +78,7 @@ D) `{1, 2}`
 
 ## Node.js (3 Questions)
 1. What will `console.log(typeof null)` print in Node.js?
+
 A) `"null"`  
 B) `"object"`  
 C) `"undefined"`  
@@ -86,6 +87,7 @@ D) `"string"`
 ---
 
 2. In Node.js, what is the main difference between `require()` and `import`?
+
 A) `import` can load JSON files, `require()` cannot.  
 B) `require()` is synchronous, `import` is asynchronous.  
 C) `require()` only works in browsers.  
@@ -94,6 +96,7 @@ D) `import` is older than `require()`.
 ---
 
 3. Which statement about the event loop in Node.js is correct?
+
 A) It executes callbacks in the order they are registered, regardless of I/O completion.  
 B) It handles asynchronous callbacks after completing the current call stack.  
 C) It prevents Node.js from handling multiple requests at the same time.  
@@ -103,6 +106,7 @@ D) It runs in a separate thread from the main JavaScript execution.
 
 ## AWS (3 Questions)
 1. In AWS S3, which storage class is **most cost-effective** for data that is rarely accessed but must be immediately available when needed?
+
 A) S3 Standard  
 B) S3 Glacier Instant Retrieval  
 C) S3 Standard-IA (Infrequent Access)  
@@ -111,6 +115,7 @@ D) S3 One Zone-IA
 ---
 
 2. What is a primary use case for AWS CloudFormation?
+
 A) Automating database queries.  
 B) Deploying and managing infrastructure as code.  
 C) Encrypting data stored in S3.  
@@ -119,6 +124,7 @@ D) Distributing content to edge locations.
 ---
 
 3. Which AWS service would you choose to run containers without managing servers or clusters?
+
 A) Amazon ECS with Fargate launch type  
 B) Amazon EC2  
 C) AWS Lambda  
