@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Dr. Daniel Mas Montserrat</title>
-  <meta name="viewport" content="width=800" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300i,400i,600i" rel="stylesheet">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html {
-      font: 400 1em/1.4 "Source Sans Pro", sans-serif;
+      font: 400 17px/1.5 "Source Sans Pro", sans-serif;
       text-rendering: optimizeLegibility;
     }
 
     body {
-      display: flex;
-      flex-direction: row;
-      padding: 1.5em;
-      min-height: 10vh;
-      width: 85vw;
-      max-width: 750px;
-      margin: auto;
+      margin: 0;
+      padding: 0.9rem;
+      min-height: 100vh;
       background-image: url("images/pattern.jpg");
       background-color: rgba(255, 255, 255, 0.75);
       background-blend-mode: lighten;
@@ -33,10 +33,10 @@
     }
 
     .content {
-      order: 1;
-      flex: 4;
-      padding: 2em;
-      margin: 1em;
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.6rem 1.5rem 2.2rem;
       background: rgba(150, 180, 180, 0);
       border-radius: 5px;
     }
@@ -51,19 +51,34 @@
       text-align: justify;
     }
 
-    .left-bar {
+    .top-bar {
       display: block;
-      flex: 1;
-      padding: 1em;
-      margin: 1em;
-      background: rgba(150, 180, 180, 0);
-      border-radius: 5px;
-      text-align: center;
     }
 
-    .left-bar ul li {
+    .top-bar table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .top-bar td {
+      vertical-align: middle;
+    }
+
+    .profile-photo-cell {
+      width: 210px;
+      padding-right: 1rem;
+    }
+
+    .hero-name {
+      margin: 0 0 0.35rem 0;
+      font-size: 2rem;
+      line-height: 1.15;
       font-weight: 600;
-      list-style-type: none;
+    }
+
+    .hero-links {
+      font-size: 1.05rem;
+      line-height: 1.8;
     }
 
     .img-circle {
@@ -74,9 +89,7 @@
       border: 3px solid black;
       height: auto;
       width: 190px;
-    }
-
-    .top-bar {
+      max-width: 100%;
       display: block;
     }
 
@@ -84,11 +97,12 @@
       border-radius: 5px;
       border-width: 0;
       border-style: dashed;
-      font-size: 0.9em;
+      font-size: 0.95em;
       background: rgba(150, 180, 180, 0);
       display: flex;
       flex-direction: row;
       box-shadow: 0 0 0 #999999;
+      margin-bottom: 0.15rem;
     }
 
     .paperImg {
@@ -103,7 +117,7 @@
 
     .paperInfo {
       flex: 1;
-      margin: 1em;
+      margin: 0.9em 0;
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -111,6 +125,9 @@
 
     .paperInfo p {
       margin: 0;
+    }
+
+    .authors-one-line {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -121,22 +138,8 @@
       flex-grow: 1;
     }
 
-    @media screen {
-      .left-bar {
-        display: none;
-      }
-
-      .top-bar {
-        display: block;
-      }
-
-      .paperImg {
-        display: none;
-      }
-
-      .content {
-        background: rgba(150, 180, 180, 0);
-      }
+    .left-bar {
+      display: none;
     }
 
     .splash_img {
@@ -145,6 +148,64 @@
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+    }
+
+    @media (max-width: 700px) {
+      html {
+        font-size: 18px;
+      }
+
+      body {
+        padding: 0.4rem;
+      }
+
+      .content {
+        max-width: none;
+        margin: 0;
+        padding: 1rem 0.95rem 1.6rem;
+      }
+
+      .top-bar table,
+      .top-bar tbody,
+      .top-bar tr,
+      .top-bar td {
+        display: block;
+        width: 100%;
+      }
+
+      .top-bar td {
+        text-align: center;
+      }
+
+      .profile-photo-cell {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 0.85rem;
+      }
+
+      .imgMe {
+        width: 138px;
+        max-width: 42vw;
+        margin: 0 auto;
+      }
+
+      .hero-name {
+        font-size: 1.7rem;
+        line-height: 1.15;
+      }
+
+      .hero-links {
+        font-size: 1rem;
+        line-height: 1.9;
+      }
+
+      .paper {
+        display: block;
+      }
+
+      .paperInfo {
+        margin: 0.8em 0;
+      }
     }
   </style>
 </head>
@@ -155,13 +216,12 @@
       <nav class="top-bar">
         <table>
           <tr>
-            <td><img src="images/mypicture3.png" class="img-circle imgMe" alt="Daniel Mas Montserrat"></td>
-            <td></td>
-            <td></td>
+            <td class="profile-photo-cell">
+              <img src="images/mypicture3.png" class="img-circle imgMe" alt="Daniel Mas Montserrat">
+            </td>
             <td>
-              <h2><b>Daniel Mas Montserrat, PhD</b></h2>
-
-              <font size="4.9">
+              <h2 class="hero-name"><b>Daniel Mas Montserrat, PhD</b></h2>
+              <div class="hero-links">
                 <i>dmasmont@stanford.edu</i>
                 <br>
                 <a href="https://scholar.google.com/citations?user=VqhWUf8AAAAJ&hl=en">Google Scholar</a>
@@ -171,7 +231,7 @@
                 <a href="https://github.com/AI-sandbox">GitHub</a>
                 &nbsp; &nbsp;
                 <a href="https://twitter.com/_danielmas">Twitter</a>
-              </font>
+              </div>
             </td>
           </tr>
         </table>
@@ -244,7 +304,7 @@
       <div class="paperInfo">
         <div class="infoTop">
           <strong>Analysis of a deeply-phenotyped familial hypercholesterolemia cohort from Mexico shows a role for both rare and common alleles across known dyslipidemia genes and reveals structural variation in a novel locus</strong>
-          <p>Nicholas Katsanis, Niki Mourtzi, ..., <b>Daniel Mas Montserrat</b>, ..., Carlos A. Aguilar-Salinas, Carlos D. Bustamante</p>
+          <p class="authors-one-line">Nicholas Katsanis, Niki Mourtzi, ..., <b>Daniel Mas Montserrat</b>, ..., Carlos A. Aguilar-Salinas, Carlos D. Bustamante</p>
           <i>Human Genomics</i>; 2025; <a href="https://link.springer.com/article/10.1186/s40246-025-00831-9">[url]</a>
         </div>
       </div>
@@ -288,7 +348,7 @@
         <div class="infoTop">
           <strong>Efficient Chromosome Parallelization for Precision Medicine Genomic Workflows</strong>
           <p><b>Daniel Mas Montserrat</b>, Ray Verma, Míriam Barrabés, Francisco M. de la Vega, Carlos D. Bustamante, Alexander G. Ioannidis</p>
-          <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>; <a href="https://ojs.aaai.org/index.php/AAAI/article/download/41443/45404">[url]</a>
+          <i>AAAI</i>; <a href="https://ojs.aaai.org/index.php/AAAI/article/download/41443/45404">[url]</a>
         </div>
       </div>
     </div>
@@ -297,7 +357,7 @@
       <div class="paperInfo">
         <div class="infoTop">
           <strong>snputils: A High-Performance Python Library for Genetic Variation and Population Structure</strong>
-          <p>David Bonet, Marçal Comajoan Cara, ..., <b>Daniel Mas Montserrat</b>, Alexander G. Ioannidis</p>
+          <p class="authors-one-line">David Bonet, Marçal Comajoan Cara, ..., <b>Daniel Mas Montserrat</b>, Alexander G. Ioannidis</p>
           <i>bioRxiv</i>; 2026; <a href="https://www.biorxiv.org/content/10.64898/2026.02.28.708618.full.pdf">[url]</a>
         </div>
       </div>
@@ -510,7 +570,6 @@
     <h2><b>Daniel Mas Montserrat</b></h2>
     <i>dmasmont@stanford.edu</i>
     <hr>
-
     <a href="https://scholar.google.com/citations?user=VqhWUf8AAAAJ&hl=en">Google Scholar</a><br>
     <a href="https://www.linkedin.com/in/daniel-mas-montserrat/">LinkedIn</a><br>
     <a href="https://github.com/AI-sandbox">GitHub</a><br>
